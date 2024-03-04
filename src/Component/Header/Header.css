@@ -4,7 +4,7 @@
     background-color: #647403;
     margin: 0px;
 }
-.Navbar , .Navbar_2{
+.Navbar{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -36,27 +36,75 @@
     padding-left: 50px;
     text-align: center;
     font-size: 1.3rem;
+    align-items: self-end;
+    cursor: pointer;
 }
 .Navbar_link a{
     text-decoration: none;
     font-size: 1.3rem;
+    cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Navbar_link li:hover{
+    color: #e4d8ab;
 }
 .Navbar_content{
     width: 40%;
     padding-left: 100px;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 130px;
+    margin-left: 50px;
 }
 .Navbar_image{
     width: 60%;
 }
 .Navbar_img{
     width: 100%;
-    height: 650px;
-    border-radius: 50% 40% 40% 50%;
+    float: right;
+    height: 600px;
+    border-radius: 50% 20% 20% 50%;
 }
 .navbar_title{
-    font-size: 4rem;
+    font-size: 6rem;
     color: white;
+}
+.navbar_content{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+    width: 60%;
+    padding: 5px 0px 10px 0px;
+    border-bottom: 3px solid #878f3b;
+}
+.navbar_buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 20px 0px 55px 0px;
+    align-items: center;
+    color: #e4d8ab;
+}
+.Navbar_btns{
+    color: #e4d8ab;
+    background-color: transparent;
+    border: 1px solid #adad6a;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    outline: none;
+}
+.Navbar_2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.Navbar_btn{
+    color: #e4d8ab;
+    background-color: black;
+    padding: 8px 15px;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
 }
