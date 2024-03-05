@@ -14,12 +14,10 @@ const Header = () => {
         </div>
         <div className="Navbar_link">
           <ul>
-            <a href="">
+            <Link to='/'>
               <li>Home</li>
-            </a>
-            <a href="">
+            </Link>
               <li>Recipes</li>
-            </a>
             <a href="">
               <li>Tips</li>
             </a>
@@ -37,8 +35,10 @@ const Header = () => {
       </div>
       <div className="Navbar_2">
         <div className="Navbar_content">
-          <h1 className='navbar_title'>BROWNIE MAGIC</h1>
-          <h4 className="navbar_content">5 tip how to make the best brownies in the game</h4>
+          <h1 className="navbar_title">BROWNIE MAGIC</h1>
+          <h4 className="navbar_content">
+            5 tip how to make the best brownies in the game
+          </h4>
           <div className="navbar_buttons">
             <div>
               <button className="Navbar_btns">How to</button>
@@ -49,7 +49,7 @@ const Header = () => {
           <button className="Navbar_btn">READ NOW</button>
         </div>
         <div className="Navbar_image">
-            <img className="Navbar_img" src="./Header-image.png" alt="" />
+          <img className="Navbar_img" src="./Header-image.png" alt="" />
         </div>
       </div>
     </div>
