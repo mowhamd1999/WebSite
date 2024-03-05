@@ -14,10 +14,12 @@ const Header = () => {
         </div>
         <div className="Navbar_link">
           <ul>
-            <Link to='/'>
+            <Link to="/">
               <li>Home</li>
             </Link>
+            <Link to='./Foods'>
               <li>Recipes</li>
+            </Link>
             <a href="">
               <li>Tips</li>
             </a>

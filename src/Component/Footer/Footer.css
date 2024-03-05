@@ -1,10 +1,9 @@
 .Footer{
-    width: 100%;
     height: auto;
     padding: 40px 60px;
     background-color: #e4d8ab;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .Footer_link{
     text-align: left;
@@ -25,7 +24,7 @@
     padding: 15px 0px;
 }
 .Footer_contact{
-    width: 40%;
+    width: 30%;
     text-align: left;
     background-color: #647504;
     margin: 20px 150px 20px 0px;

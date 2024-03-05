@@ -1,0 +1,20 @@
+.All{
+    padding: 100px 0px 100px 50px;
+    background-image: url(/public/image/background.jpg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+.Food{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 100px 0px 100px 0px;
+}
+.Food_menu_title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: fantasy;
+}
