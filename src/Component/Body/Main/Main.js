@@ -140,7 +140,7 @@ const Main = () => {
             />
             <div className="Secound_content">
               <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span>Gluten free with potato crust!</span>
+              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
             </div>
           </div>
           <div className="Secound_secound_link">
@@ -151,7 +151,7 @@ const Main = () => {
             />
             <div className="Secound_content">
               <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span>Gluten free with potato crust!</span>
+              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
             </div>
           </div>
           <div className="Secound_secound_link">
@@ -162,7 +162,7 @@ const Main = () => {
             />
             <div className="Secound_content">
               <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span>Gluten free with potato crust!</span>
+              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
             </div>
           </div>
           <div className="Secound_secound_link">
@@ -173,7 +173,7 @@ const Main = () => {
             />
             <div className="Secound_content">
               <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span>Gluten free with potato crust!</span>
+              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
             </div>
           </div>
           <div className="Secound_secound_link">
@@ -184,7 +184,7 @@ const Main = () => {
             />
             <div className="Secound_content">
               <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span>Gluten free with potato crust!</span>
+              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
             </div>
           </div>
         </div>

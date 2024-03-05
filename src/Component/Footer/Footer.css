@@ -1,0 +1,82 @@
+.Footer{
+    width: 100%;
+    height: auto;
+    padding: 40px 60px;
+    background-color: #e4d8ab;
+    display: flex;
+    justify-content: space-around;
+}
+.Footer_link{
+    text-align: left;
+    width: 40%;
+}
+.Footer_title{
+    font-size: 2rem;
+    color: #647504;
+    text-align: left;
+    border-bottom: 2px solid #647504;
+    width: 70%;
+    padding-bottom: 15px;
+}
+.Footer_content{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 15px 0px;
+}
+.Footer_contact{
+    width: 40%;
+    text-align: left;
+    background-color: #647504;
+    margin: 20px 150px 20px 0px;
+    border-radius: 30px;
+    padding: 30px;
+    height: 100px;
+    align-self: center;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Links{
+    list-style: none;  
+}
+.Links li{
+    padding: 10px 0px;
+    font-size: 1.2rem;
+    color: #647504;
+    cursor: pointer;
+}
+.Links li:hover{
+    color: black;
+}
+.email{
+    padding: 50px 0px 0px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.email input{
+    width: 60%;
+    padding: 10px 14px;
+    background-color: inherit;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid white;
+    outline: none;
+    font-size: 1rem;
+}
+.Footer_btn{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.Footer_btn:hover{
+    background-color: white;
+    color: black;
+}   

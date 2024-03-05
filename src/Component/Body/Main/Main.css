@@ -46,6 +46,10 @@
     outline: none;
     cursor: pointer;
 }
+.btn:hover{
+    color: white;
+    background-color: black;
+}
 .Main_author{
     display: flex;
     margin: 20px;
@@ -164,7 +168,7 @@
 }
 .Secound_secound_link{
     width: 250px;
-    background-color: white;
+    background-color: #fffef6;
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(239, 241, 207, 0.2), 0 6px 20px 0 rgba(184, 191, 140, 0.19);

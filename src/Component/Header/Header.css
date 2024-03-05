@@ -1,6 +1,6 @@
 .Header{
     width: 100%;
-    height: calc(100vh - 150px);
+    height: 100vh;
     background-color: #647403;
     margin: 0px;
 }
@@ -46,7 +46,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .Navbar_link li:hover{
-    color: #e4d8ab;
+    color: black;
 }
 .Navbar_content{
     width: 40%;
@@ -56,7 +56,8 @@
     padding-top: 100px;
 }
 .Navbar_image{
-    width: 60%;
+    width: 40%;
+    height: auto;
 }
 .Navbar_img{
     width: 100%;
