@@ -50,18 +50,17 @@
 }
 .Navbar_content{
     width: 40%;
-    padding-left: 100px;
+    height: 100%;
     align-items: center;
-    padding-top: 130px;
-    margin-left: 50px;
+    margin-left: 100px;
+    padding-top: 100px;
 }
 .Navbar_image{
     width: 60%;
 }
 .Navbar_img{
     width: 100%;
-    float: right;
-    height: 600px;
+    height: 80%;
     border-radius: 50% 20% 20% 50%;
 }
 .navbar_title{
@@ -96,8 +95,9 @@
 .Navbar_2{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 30px;
+    height: 100%;
 }
 .Navbar_btn{
     color: #e4d8ab;
