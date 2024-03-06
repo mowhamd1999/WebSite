@@ -4,6 +4,8 @@
     background-color: #e4d8ab;
     display: flex;
     justify-content: center;
+    position: absolute;
+    width: -webkit-fill-available;
 }
 .Footer_link{
     text-align: left;

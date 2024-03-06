@@ -12,6 +12,25 @@ const Main = () => {
   const [season, setSeason] = useState(dinner);
   return (
     <div className="Main">
+      <div className="Navbar_2">
+        <div className="Navbar_content">
+          <h1 className="navbar_title">BROWNIE MAGIC</h1>
+          <h4 className="navbar_content">
+            5 tip how to make the best brownies in the game
+          </h4>
+          <div className="navbar_buttons">
+            <div>
+              <button className="Navbar_btns">How to</button>
+              <button className="Navbar_btns">backing</button>
+            </div>
+            <p>12 min read</p>
+          </div>
+          <button className="Navbar_btn">READ NOW</button>
+        </div>
+        <div className="Navbar_image">
+          <img className="Navbar_img" src="./Header-image.png" alt="" />
+        </div>
+      </div>
       <div className="Main_first">
         <div className="Main_first_1">
           <h2 className="title">Gift guide for foodies</h2>
@@ -136,18 +155,10 @@ const Main = () => {
         <div className="Secound_secound_content">
           {season.map((item) => (
             <div className="Secound_secound_link">
-              <img
-                className="Secound_secound_img"
-                src={item.image}
-                alt=""
-              />
+              <img className="Secound_secound_img" src={item.image} alt="" />
               <div className="Secound_content">
-                <h3 style={{ paddingBottom: "10px" }}>
-                  {item.title}
-                </h3>
-                <span style={{ color: "gray" }}>
-                  {item.note}
-                </span>
+                <h3 style={{ paddingBottom: "10px" }}>{item.title}</h3>
+                <span style={{ color: "gray" }}>{item.note}</span>
               </div>
             </div>
           ))}

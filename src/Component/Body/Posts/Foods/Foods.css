@@ -4,7 +4,7 @@
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: hsla(0, 0%, 100%, 0.3);
+    background-color: hsla(86, 10%, 55%, 0.5);
 }
 .Food{
     display: flex;

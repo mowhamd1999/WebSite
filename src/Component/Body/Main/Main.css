@@ -4,12 +4,11 @@
     width: 100%;
     align-items: center;
     text-align: center;
-    padding-top: 70px;
 }
 .Main_first{
     width: 100%;
     display: flex;
-    padding-top: 15px;
+    padding-top: 100px;
     justify-content: center;
 }
 .Main_first_1{
