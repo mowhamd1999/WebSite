@@ -18,3 +18,62 @@
     font-weight: 500;
     font-family: fantasy;
 }
+.Food_menu{
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px ;
+    background-color: #fffef6;
+    margin: 0px 50px 30px 0px;
+    box-shadow: 0 4px 8px 0 rgba(239, 241, 207, 0.2), 0 6px 20px 0 rgba(184, 191, 140, 0.19);
+}
+.Food_menu_image{
+    width: 320px;
+    height: 250px;
+}
+.Food_menu_info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 40px 0px 10px 0px;
+    border-bottom: 1px solid #f3ecd3;
+}
+.Food_info_btn{
+    padding: 7px 13px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+}
+.Food_info_btn:hover{
+    color: white;
+    background-color: black;
+}
+.Food_menu_content{
+    padding: 10px;
+}
+.Food_menu_author{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.span{
+    margin-left: 30px;
+}
+.Food_menu_btn{
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: none;
+    background-color: inherit;
+    display: flex;
+    cursor: pointer;
+}
+.Food_menu_btn:hover{
+    color: #647503;
+}

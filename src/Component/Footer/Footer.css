@@ -7,13 +7,13 @@
 }
 .Footer_link{
     text-align: left;
-    width: 40%;
+    width: 30%;
 }
 .Footer_title{
     font-size: 2rem;
     color: #647504;
     text-align: left;
-    border-bottom: 2px solid #647504;
+    border-bottom: 1px solid #647504;
     width: 70%;
     padding-bottom: 15px;
 }

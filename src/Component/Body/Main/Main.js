@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Main.css";
 import { LuEggFried } from "react-icons/lu";
 import { LiaBreadSliceSolid } from "react-icons/lia";
@@ -7,7 +7,9 @@ import { PiHamburger } from "react-icons/pi";
 import { LuSoup } from "react-icons/lu";
 import { PiWine } from "react-icons/pi";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import dinner from "../../../datas";
 const Main = () => {
+  const [season, setSeason] = useState(dinner);
   return (
     <div className="Main">
       <div className="Main_first">
@@ -132,61 +134,23 @@ const Main = () => {
           </div>
         </div>
         <div className="Secound_secound_content">
-          <div className="Secound_secound_link">
-            <img
-              className="Secound_secound_img"
-              src="Header-image.png"
-              alt=""
-            />
-            <div className="Secound_content">
-              <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
+          {season.map((item) => (
+            <div className="Secound_secound_link">
+              <img
+                className="Secound_secound_img"
+                src={item.image}
+                alt=""
+              />
+              <div className="Secound_content">
+                <h3 style={{ paddingBottom: "10px" }}>
+                  {item.title}
+                </h3>
+                <span style={{ color: "gray" }}>
+                  {item.note}
+                </span>
+              </div>
             </div>
-          </div>
-          <div className="Secound_secound_link">
-            <img
-              className="Secound_secound_img"
-              src="Header-image.png"
-              alt=""
-            />
-            <div className="Secound_content">
-              <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
-            </div>
-          </div>
-          <div className="Secound_secound_link">
-            <img
-              className="Secound_secound_img"
-              src="Header-image.png"
-              alt=""
-            />
-            <div className="Secound_content">
-              <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
-            </div>
-          </div>
-          <div className="Secound_secound_link">
-            <img
-              className="Secound_secound_img"
-              src="Header-image.png"
-              alt=""
-            />
-            <div className="Secound_content">
-              <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
-            </div>
-          </div>
-          <div className="Secound_secound_link">
-            <img
-              className="Secound_secound_img"
-              src="Header-image.png"
-              alt=""
-            />
-            <div className="Secound_content">
-              <h3 style={{paddingBottom:'10px'}}>Spring Quiche with vegetables</h3>
-              <span style={{color:'gray'}}>Gluten free with potato crust!</span>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

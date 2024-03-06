@@ -1,0 +1,90 @@
+.details-modal{
+    padding: 30px;
+    font-size: 1.3rem;
+    width: 70%;
+    text-align: right;
+}
+.closetab{
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    text-align: right;
+    margin-bottom: 40px;
+}
+.modal-parent {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.9s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.modal-parent.active {
+    opacity: 1;
+    visibility: visible;
+}
+.detail_container{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.detail_img{
+    width: 450px;
+    height: 350px;
+    border-radius: 20% 30% 40% 50%;
+}
+.detail_title{
+    text-align: center;
+    font-size: 4rem;
+}
+.detail_note{
+    padding: 10px 20px 20px 20px;
+    width: 80%;
+    text-align: center;
+}
+.detail_detail{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.detail_ingrediants{
+}
+.detail_ingrediants li{
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+}
+.detail_step li{
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+}
+.detail_ul{
+    display: contents;
+}
+.detail_step{
+    margin-left: 100px;
+    display: grid;
+}
+.detail_btn{
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    border: 1px solid black;
+    background-color: #e4d8ab;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.detail_btn:hover{
+    color: white;
+    background-color: black;
+}

@@ -12,109 +12,88 @@ let dinner = [
       "1/3 cup grated Pecorino cheese",
       "1 cup grated Grana Padano cheese",
     ],
-    time: '20 minutes',
-    step_1:
+    time: "20 minutes",
+    step: [
       "Boil water in a pot. Season it with salt and then add pasta to cook.Stir occassionally until the pasta get tender.Before draining pasta reserve 3/4 cup of pasta cooking water.",
-    step_2:
       "On a medium large skillet melt butter. Once the butter is melted, keep the temperature on medium heat and add pepper, cook until the pepper is toasted",
-    step_3:
       "Add the reserved pasta water to the skillet and let simmer. Add pasta and all grated cheese. Stir and toss until cheese melts and creates creamy texture. Then the pasta is ready to serve.",
-    image: '/image/creamypasta.jpg'
+    ],
+    image: "/image/creamypasta.jpg",
+    date: "March 18 , 2024",
   },
   {
     title: "Potato",
     author: "Mohammad Sadeghiani",
     rate: 5,
     note: "Here is we are . Today im gonna show you how can i make potato khelal with soas.",
-    ingredients: [
-      '1kg potato',
-      '50cc oil',
-      '200g soas'
-    ],
-    time: '15 minutes',
-    step_1:
+    ingredients: ["1kg potato", "50cc oil", "200g soas"],
+    time: "15 minutes",
+    step: [
       "Boil water in a pot. Season it with salt and then add pasta to cook.Stir occassionally until the pasta get tender.Before draining pasta reserve 3/4 cup of pasta cooking water.",
-    step_2:
       "On a medium large skillet melt butter. Once the butter is melted, keep the temperature on medium heat and add pepper, cook until the pepper is toasted",
-    step_3:
       "Add the reserved pasta water to the skillet and let simmer. Add pasta and all grated cheese. Stir and toss until cheese melts and creates creamy texture. Then the pasta is ready to serve.",
-    image: '/image/potato.jpg'
+    ],
+    image: "/image/potato.jpg",
   },
   {
-    title: "Potato",
+    title: "Cake",
+    author: "Mohammad Sadeghiani",
+    rate: 3,
+    note: "Here is we are . Today im gonna show you how can i make potato khelal with soas.",
+    ingredients: ["1kg potato", "50cc oil", "200g soas"],
+    time: "35 minutes",
+    step: [
+      "Boil water in a pot. Season it with salt and then add pasta to cook.Stir occassionally until the pasta get tender.Before draining pasta reserve 3/4 cup of pasta cooking water.",
+      "On a medium large skillet melt butter. Once the butter is melted, keep the temperature on medium heat and add pepper, cook until the pepper is toasted",
+      "Add the reserved pasta water to the skillet and let simmer. Add pasta and all grated cheese. Stir and toss until cheese melts and creates creamy texture. Then the pasta is ready to serve.",
+    ],
+    image: "/Header-image.png",
+    date: "March 18 , 2024",
+  },
+  {
+    title: "Chicken",
     author: "Mohammad Sadeghiani",
     rate: 5,
     note: "Here is we are . Today im gonna show you how can i make potato khelal with soas.",
-    ingredients: [
-      '1kg potato',
-      '50cc oil',
-      '200g soas'
-    ],
-    time: '15 minutes',
-    step_1:
+    ingredients: ["1kg potato", "50cc oil", "200g soas"],
+    time: "20 minutes",
+    date: "March 18 , 2024",
+    step: [
       "Boil water in a pot. Season it with salt and then add pasta to cook.Stir occassionally until the pasta get tender.Before draining pasta reserve 3/4 cup of pasta cooking water.",
-    step_2:
       "On a medium large skillet melt butter. Once the butter is melted, keep the temperature on medium heat and add pepper, cook until the pepper is toasted",
-    step_3:
       "Add the reserved pasta water to the skillet and let simmer. Add pasta and all grated cheese. Stir and toss until cheese melts and creates creamy texture. Then the pasta is ready to serve.",
-    image: '/image/potato.jpg'
+    ],
+    image: "/image/background.jpg",
   },
   {
-    title: "Potato",
+    title: "Pizza",
+    date: "March 18 , 2024",
     author: "Mohammad Sadeghiani",
     rate: 5,
     note: "Here is we are . Today im gonna show you how can i make potato khelal with soas.",
-    ingredients: [
-      '1kg potato',
-      '50cc oil',
-      '200g soas'
-    ],
-    time: '15 minutes',
-    step_1:
+    ingredients: ["1kg potato", "50cc oil", "200g soas"],
+    time: "22 minutes",
+    step: [
       "Boil water in a pot. Season it with salt and then add pasta to cook.Stir occassionally until the pasta get tender.Before draining pasta reserve 3/4 cup of pasta cooking water.",
-    step_2:
       "On a medium large skillet melt butter. Once the butter is melted, keep the temperature on medium heat and add pepper, cook until the pepper is toasted",
-    step_3:
       "Add the reserved pasta water to the skillet and let simmer. Add pasta and all grated cheese. Stir and toss until cheese melts and creates creamy texture. Then the pasta is ready to serve.",
-    image: '/image/potato.jpg'
+    ],
+    image: "/image/pizza.jpg",
   },
   {
-    title: "Potato",
+    title: "Burger",
+    date: "March 18 , 2024",
     author: "Mohammad Sadeghiani",
-    rate: 5,
+    rate: 2,
     note: "Here is we are . Today im gonna show you how can i make potato khelal with soas.",
-    ingredients: [
-      '1kg potato',
-      '50cc oil',
-      '200g soas'
-    ],
-    time: '15 minutes',
-    step_1:
+    ingredients: ["1kg potato", "50cc oil", "200g soas"],
+    time: "13 minutes",
+    step:[
       "Boil water in a pot. Season it with salt and then add pasta to cook.Stir occassionally until the pasta get tender.Before draining pasta reserve 3/4 cup of pasta cooking water.",
-    step_2:
       "On a medium large skillet melt butter. Once the butter is melted, keep the temperature on medium heat and add pepper, cook until the pepper is toasted",
-    step_3:
       "Add the reserved pasta water to the skillet and let simmer. Add pasta and all grated cheese. Stir and toss until cheese melts and creates creamy texture. Then the pasta is ready to serve.",
-    image: '/image/potato.jpg'
-  },
-  {
-    title: "Potato",
-    author: "Mohammad Sadeghiani",
-    rate: 5,
-    note: "Here is we are . Today im gonna show you how can i make potato khelal with soas.",
-    ingredients: [
-      '1kg potato',
-      '50cc oil',
-      '200g soas'
     ],
-    time: '15 minutes',
-    step_1:
-      "Boil water in a pot. Season it with salt and then add pasta to cook.Stir occassionally until the pasta get tender.Before draining pasta reserve 3/4 cup of pasta cooking water.",
-    step_2:
-      "On a medium large skillet melt butter. Once the butter is melted, keep the temperature on medium heat and add pepper, cook until the pepper is toasted",
-    step_3:
-      "Add the reserved pasta water to the skillet and let simmer. Add pasta and all grated cheese. Stir and toss until cheese melts and creates creamy texture. Then the pasta is ready to serve.",
-    image: '/image/potato.jpg'
+    image: "/image/burger.jpg",
   },
 ];
-export default dinner
+export default dinner;
