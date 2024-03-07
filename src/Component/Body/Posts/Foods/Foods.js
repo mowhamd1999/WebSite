@@ -7,11 +7,11 @@ import Mini from "./MiniFood/Mini";
 const Foods = () => {
   const [dinners, setDinners] = useState(dinner);
   const [isShow, setIsShow] = useState(false);
-  const [ghaza , setGhaza] = useState()
+  const [setDinner , setSetDinner] = useState()
   const setShowHandler = (food) => {
     let Dinner = food
     setIsShow(true);
-    setGhaza(Dinner)
+    setSetDinner(Dinner)
     console.log(food)
   };
   const closeHandler = () => {
@@ -56,7 +56,7 @@ const Foods = () => {
             </div>
           </div>
         ))}
-        {isShow && <Mini onhide={closeHandler} foods={ghaza} />}
+        {isShow && <Mini onhide={closeHandler} foods={setDinner} />}
       </div>
     </div>
   );

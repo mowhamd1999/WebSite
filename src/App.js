@@ -9,15 +9,15 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div>
-          <Header />
+        <Header />
+        <div className="body">
           <Routes>
             <Route path="/" element=<Main /> />
             <Route path="/Foods" element=<Foods /> />
             <Route path="/Foods/:title" element=<Food /> />
           </Routes>
-          <Footer />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
