@@ -9,7 +9,6 @@ const Foods = () => {
   const food = dinners.find((item) => item.title == params.title);
   var image = food.image;
   var headerImage = {
-    width: "100%",
     height: "400px",
     backgroundImage: "url(" + image + ")",
   };
@@ -59,7 +58,58 @@ const Foods = () => {
         </div>
       </div>
       <div className="food_main">
-        <div className="food_main_note">{food.note}</div>
+        <div className="food_main_note">
+          <div className="food_main_note_1">{food.note}</div>
+        </div>
+        <div className="food_ingredients">
+          <div className="food_ingredients_title">
+            <div style={{width:'100%'}}>
+              <div className="food_ingredients_head">
+                <div className="food_ingredients_dash"></div>
+                <h2>INGREDIENTS</h2>
+              </div>
+              <div className="food_ingredients_info">
+                <div className="food_ingredients_space"></div>
+                <div className="food_ingredients_note">
+                {food.ingredients.map((item , index)=> (
+                  <div className="food_ingredients_div">
+                    {item}
+                  </div>
+                ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="food_preparation">
+          <div className="food_preparation_title">
+            <div>
+              <div className="food_preparation_head">
+                <h2>PREPARATION</h2>
+                <div className="food_preparation_dash"></div>
+              </div>
+              <div className="food_preparation_info">
+                <div className="food_preparation_step">
+                  {food.step.map((item, index) => (
+                    <div>
+                      <h2 className="food_preparation_steps">
+                        Step {index + 1}
+                      </h2>
+                      <div className="food_preparation_note">{item}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="food_preparation_space">
+                  <img
+                    className="food_preparation_image"
+                    src={food.image}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

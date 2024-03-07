@@ -8,7 +8,6 @@
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
-
     display: grid;
 }
 .food_title{
@@ -35,13 +34,109 @@
     padding: 20px 15px;
     font-size: 1.3rem;
 }
-.food_main_note{
-    width: 40%;
+.food_main_note_1{
+    width: 20%;
     background-color: #647403;
-    padding: 20px;
+    padding: 40px 70px;
+    font-size: 1.7rem;
     color: #fffef6;
     border-radius: 20px;
     border: none;
     outline: none;
     text-align: center;
+}
+.food_main_note{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+.food_ingredients{
+    margin: 0px 100px 0px 100px;
+}
+.food_ingredients_title{
+    display: flex;
+    justify-content: center;
+}
+.food_ingredients_head{
+    font-size: 2.4rem;
+    color: #647403;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.food_ingredients_dash{
+    border-bottom: 2px solid #b3ba86;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+.food_ingredients_info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.food_ingredients_space{
+    width: 30%;
+
+}
+.food_ingredients_note{
+    width: 20%;
+    background-color: #fffef6;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.food_preparation{
+    padding: 0px 100px 100px 100px;
+}
+.food_preparation_title{
+    display: flex;
+    justify-content: center;
+}
+.food_preparation_head{
+    font-size: 2.4rem;
+    color: #647403;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.food_preparation_dash{
+    border-bottom: 2px solid #b3ba86;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+.food_preparation_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+
+}
+.food_preparation_note{
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.food_preparation_step{
+    width: 30%;
+}
+.food_preparation_space{
+    width: 30%;
+}
+.food_preparation_image{
+    width: 100%;
+    height: -webkit-fill-available;
+    border-radius: 20px;
+}
+.food_preparation_steps{
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #647403;
+}
+.food_ingredients_div{
+    font-size: 1.3rem;
 }
