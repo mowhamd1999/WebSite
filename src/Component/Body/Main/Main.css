@@ -11,6 +11,11 @@
     padding-top: 100px;
     justify-content: center;
 }
+.Top_Food{
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #647403;
+}
 .Main_first_1{
     background-color: #fffef6;
     border-radius: 30px;
@@ -162,6 +167,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 60px 0px 60px 0px;
+    flex-wrap: wrap;
 }
 .Secound_secound_link{
     width: 250px;

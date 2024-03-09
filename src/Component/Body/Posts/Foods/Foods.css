@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    display: -webkit-inline-box;
     padding: 100px 0px 100px 0px;
 }
 .Food_menu_title{
@@ -19,8 +20,7 @@
     font-family: fantasy;
 }
 .Food_menu{
-    display: flex;
-    padding: 0px 20px 0px 20px;
+    padding: 20px 0px 20px 0px;
     border-radius: 20px ;
     background-color: #fffef6;
     margin: 0px 50px 30px 0px;

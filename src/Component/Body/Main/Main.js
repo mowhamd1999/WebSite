@@ -8,8 +8,12 @@ import { LuSoup } from "react-icons/lu";
 import { PiWine } from "react-icons/pi";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import dinner from "../../../datas";
+import { Link } from "react-router-dom";
 const Main = () => {
+  const [Toprate, setTopRate] = useState(dinner);
+  const rated = Toprate.filter((item) => item.rate == 4);
   const [season, setSeason] = useState(dinner);
+  console.log(rated);
   return (
     <div className="Main">
       <div className="Navbar_2">
@@ -31,6 +35,7 @@ const Main = () => {
           <img className="Navbar_img" src="./Header-image.png" alt="" />
         </div>
       </div>
+      <h1 className="Top_Food">TOP FOOD</h1>
       <div className="Main_first">
         <div className="Main_first_1">
           <h2 className="title">Gift guide for foodies</h2>
@@ -49,60 +54,28 @@ const Main = () => {
           </div>
         </div>
         <div className="Main_first_2">
-          <div className="First_1">
-            <img className="Main_first_2_img" src="Header-image.png" alt="" />
-            <div className="First_1_title">
-              <h2>creamy spoghetti</h2>
-              <div className="First_1_btn">
-                <button className="btn">Products</button>
-                <span>5 min read</span>
-              </div>
-              <div className="Main_author_2">
-                <img className="athor_img" src="Header-image.png" alt="" />
-                <div className="athor_title">
-                  <span>Peter Pan</span>
-                  <br />
-                  <span>March 20, 2022</span>
+          {rated.map((item) => (
+            <div className="First_1">
+              <img className="Main_first_2_img" src={item.image} alt="" />
+              <div className="First_1_title">
+                <h2>{item.title}</h2>
+                <div className="First_1_btn">
+                  <Link to={`/Foods/${item.title}`}>
+                    <button className="btn">Products</button>
+                  </Link>
+                  <span>{item.time}</span>
+                </div>
+                <div className="Main_author_2">
+                  <img className="athor_img" src="Header-image.png" alt="" />
+                  <div className="athor_title">
+                    <span>{item.author}</span>
+                    <br />
+                    <span>{item.date}</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="First_1">
-            <img className="Main_first_2_img" src="Header-image.png" alt="" />
-            <div className="First_1_title">
-              <h2>creamy spoghetti</h2>
-              <div className="First_1_btn">
-                <button className="btn">Products</button>
-                <span>5 min read</span>
-              </div>
-              <div className="Main_author_2">
-                <img className="athor_img" src="Header-image.png" alt="" />
-                <div className="athor_title">
-                  <span>Peter Pan</span>
-                  <br />
-                  <span>March 20, 2022</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="First_1">
-            <img className="Main_first_2_img" src="Header-image.png" alt="" />
-            <div className="First_1_title">
-              <h2>creamy spoghetti</h2>
-              <div className="First_1_btn">
-                <button className="btn">Products</button>
-                <span>5 min read</span>
-              </div>
-              <div className="Main_author_2">
-                <img className="athor_img" src="Header-image.png" alt="" />
-                <div className="athor_title">
-                  <span>Peter Pan</span>
-                  <br />
-                  <span>March 20, 2022</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <div className="Secound_first">

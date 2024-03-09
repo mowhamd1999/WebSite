@@ -6,24 +6,31 @@ const searchHandler = () => {
   window.prompt("search");
 };
 const Header = () => {
-  const params = useLocation()
+  const params = useLocation();
   return (
-    <div className={params.pathname === '/' ? 'Header' : 'setHeader' }>
-      <div className='Navbar'>
-        <div className={params.pathname === '/' ? 'Navbar_title' : 'setNavbar_title' }>
+    <div className={params.pathname === "/" ? "Header" : "setHeader"}>
+      <div className="Navbar">
+        <div
+          className={
+            params.pathname === "/" ? "Navbar_title" : "setNavbar_title"
+          }
+        >
           <h2>MyFood</h2>
         </div>
-        <div className={params.pathname === '/' ? 'Navbar_link' : 'setNavbar_link' }>
+        <div
+          className={params.pathname === "/" ? "Navbar_link" : "setNavbar_link"}
+        >
           <ul>
             <Link to="/">
               <li>Home</li>
             </Link>
-            <Link to='./Foods'>
+            <Link to="./Foods">
+              <li>Dinner</li>
+            </Link>
+            <Link to='./Recipes'>
               <li>Recipes</li>
             </Link>
-            <a href="">
-              <li>Tips</li>
-            </a>
+
             <a href="">
               <li>Contact</li>
             </a>
@@ -36,7 +43,6 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      
     </div>
   );
 };

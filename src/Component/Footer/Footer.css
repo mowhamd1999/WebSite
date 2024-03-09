@@ -67,6 +67,7 @@
     border: 1px solid white;
     outline: none;
     font-size: 1rem;
+    mix-blend-mode: screen;
 }
 .Footer_btn{
     background-color: black;
