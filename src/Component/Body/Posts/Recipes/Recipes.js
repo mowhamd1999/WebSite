@@ -4,6 +4,25 @@ import dinner from "../../../../datas";
 import { Link } from "react-router-dom";
 const Recipes = () => {
   const [dinners, setDinners] = useState(dinner);
+  const [category, setCategory] = useState("Category");
+  const [country, setCountry] = useState("Country");
+  //   const input = (category, country, dinners) => {
+  //     if (category == "dinner" && country == "italian") {
+  //       const dinner = dinners.filter(
+  //         (item) => item.category == "dinner" && item.country == "italian"
+  //       );
+  //       return dinner;
+  //     }
+  //     // console.log(input)
+  //     return input
+  //   };
+  const categoryHandler = (event) => {
+    setCategory(event.target.value);
+  };
+  const countryHandler = (e) => {
+    setCountry(e.target.value);
+  };
+    console.log(category, country);
   return (
     <div className="Recipes_container">
       <h1 className="Recipes_title">PASTA</h1>
@@ -11,22 +30,57 @@ const Recipes = () => {
         <div className="Body_header">
           <h4>Filter articles</h4>
           <span>8 items</span>
+
+          {/* {input(dinners)} */}
         </div>
         <div className="Body_filters">
-          <select className="Body_filter_category" name="category" id="1">
-            <option value="category">Category</option>
+          <select
+            className="Body_filter_category"
+            onChange={categoryHandler}
+            name="category"
+            id="1"
+          >
             <option value="dinner">Dinner</option>
             <option value="breakfast">BreakFast</option>
             <option value="cocktails">CockTails</option>
           </select>
-          <select className="Body_filter_country" name="country" id="2">
-            <option value="category">Italian</option>
-            <option value="dinner">English</option>
-            <option value="breakfast">Iran</option>
+          <select
+            className="Body_filter_country"
+            onChange={countryHandler}
+            name="country"
+            id="2"
+          >
+            <option value="italian">Italian</option>
+            <option value="english">English</option>
+            <option value="iran">Iran</option>
           </select>
         </div>
         <div className="Body_posts">
-          {dinners.map((item) => (
+          {category == "dinner" &&
+            country == "italian" &&
+            dinners.filter(
+              (item => item.category == "Dinner") &&
+                (item => item.country == "Italian")).map((item) => (
+                  <div className="Body_post">
+                    <h3 className="post_title">{item.title}</h3>
+                    <img
+                      className="post_image"
+                      src={item.image}
+                      alt={item.title}
+                    />
+                    <br />
+                    <span className="post_note">
+                      {item.note.substring(0, 30)}...
+                    </span>
+                    <br />
+                    <Link to={`/Foods/${item.title}`}>
+                      <button className="post_btn">READ</button>
+                    </Link>
+                  </div>
+                ))
+            }
+          {/* ///////////////////////////////////// */}
+          {/* {dinners.map((item) => (
             <div className="Body_post">
               <h3 className="post_title">{item.title}</h3>
               <img className="post_image" src={item.image} alt={item.title} />
@@ -37,7 +91,7 @@ const Recipes = () => {
                 <button className="post_btn">READ</button>
               </Link>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

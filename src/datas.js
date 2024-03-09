@@ -12,6 +12,8 @@ let dinner = [
       "1/3 cup grated Pecorino cheese",
       "1 cup grated Grana Padano cheese",
     ],
+    category: 'Dinner',
+    country: 'Italian',
     time: "20 minutes",
     step: [
       "Boil water in a pot. Season it with salt and then add pasta to cook.Stir occassionally until the pasta get tender.Before draining pasta reserve 3/4 cup of pasta cooking water.",
@@ -33,6 +35,8 @@ let dinner = [
       "On a medium large skillet melt butter. Once the butter is melted, keep the temperature on medium heat and add pepper, cook until the pepper is toasted",
       "Add the reserved pasta water to the skillet and let simmer. Add pasta and all grated cheese. Stir and toss until cheese melts and creates creamy texture. Then the pasta is ready to serve.",
     ],
+    category: 'BreakFast',
+    country: 'Iran',
     image: "/image/potato.jpg",
   },
   {
@@ -50,6 +54,8 @@ let dinner = [
       "1/4 cup grated Parmesan cheese",
       "Salt and pepper to taste",
     ],
+    category: 'Dinner',
+    country: 'Italian',
     time: "20 minutes",
     step: [
       "Cook pasta according to package directions. Reserve 1 cup of pasta water before draining.",
@@ -63,6 +69,8 @@ let dinner = [
   },
   {
     title: "Chicken",
+    category: 'Dinner',
+    country: 'Italian',
     author: "Mohammad Sadeghiani",
     rate: 5,
     note: "Here is we are . Today im gonna show you how can i make potato khelal with soas.",
@@ -78,6 +86,8 @@ let dinner = [
   },
   {
     title: "Pizza",
+    category: 'Dinner',
+    country: 'Italian',
     date: "March 18 , 2024",
     author: "Mohammad Sadeghiani",
     rate: 5,
@@ -93,6 +103,8 @@ let dinner = [
   },
   {
     title: "Burger",
+    category: 'Dinner',
+    country: 'Italian',
     date: "March 18 , 2024",
     author: "Mohammad Sadeghiani",
     rate: 2,
@@ -113,6 +125,8 @@ let dinner = [
     rate : 1,
     author: 'Mohammad Sadeghiani',
     time: '6 minutes',
+    category: 'Dinner',
+    country: 'Italian',
     ingredients: [
       "eggs: 2",
       "milk: 2 tablespoons",
