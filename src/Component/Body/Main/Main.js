@@ -128,11 +128,15 @@ const Main = () => {
         <div className="Secound_secound_content">
           {season.map((item) => (
             <div className="Secound_secound_link">
-              <img className="Secound_secound_img" src={item.image} alt="" />
-              <div className="Secound_content">
-                <h3 style={{ paddingBottom: "10px" }}>{item.title}</h3>
-                <span style={{ color: "gray" }}>{item.note}</span>
-              </div>
+              <Link className="Link" to={`./Foods/${item.title}`}>
+                <img className="Secound_secound_img" src={item.image} alt="" />
+                <div className="Secound_content">
+                  <h3 style={{ paddingBottom: "10px" }}>{item.title}</h3>
+                  <span style={{ color: "gray" }}>
+                    {item.note.substring(0, 30)}
+                  </span>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

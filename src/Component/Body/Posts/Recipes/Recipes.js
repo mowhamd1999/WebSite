@@ -30,7 +30,6 @@ const Recipes = () => {
           <h4>Filter articles</h4>
           <span>{category.length} items</span>
 
-          {/* {input(dinners)} */}
         </div>
         <div className="Body_filters">
           <select

@@ -145,5 +145,32 @@ let dinner = [
     ],
     note: "This is a basic recipe for scrambled eggs. You can adjust the amount of milk, butter, salt, and pepper to your liking. You can also add other ingredients, such as chopped ham, sausage, or herbs.",
   },
+  {
+    title: "Scrambled Eggs",
+    image: '/image/scrambled_egg.jpg',
+    date : '19 Feb 2024',
+    rate : 1,
+    author: 'Mohammad Sadeghiani',
+    time: '6 minutes',
+    category: 'breakfast',
+    country: 'english',
+    ingredients: [
+      "eggs: 2",
+      "milk: 2 tablespoons",
+      "butter: 1 tablespoon",
+      "salt: to taste",
+      "pepper: to taste",
+      "cheese: shredded, any kind",
+    ],
+    step: [
+      "Crack the eggs into a bowl and whisk them together with the milk.",
+      "Heat the butter in a pan over medium heat.",
+      "Pour the egg mixture into the pan and let it cook for a minute, then gently stir the eggs with a spatula.",
+      "Continue to stir the eggs until they are cooked through to your desired consistency.",
+      "Season with salt and pepper to taste.",
+      "**Optional:** Add cheese and/or chopped vegetables during step 3 and cook them with the eggs.",
+    ],
+    note: "This is a basic recipe for scrambled eggs. You can adjust the amount of milk, butter, salt, and pepper to your liking. You can also add other ingredients, such as chopped ham, sausage, or herbs.",
+  },
 ];
 export default dinner;
