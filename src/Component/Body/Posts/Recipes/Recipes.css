@@ -59,10 +59,18 @@
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(239, 241, 207, 0.2), 0 6px 20px 0 rgba(184, 191, 140, 0.19);
 }
+.Post_title{
+    display: flex;
+    justify-content: space-between;
+}
 .post_title{
     padding: 20px 15px 10px 15px;
     font-size: 1.3rem;
     font-weight: 500;
+}
+.post_notification{
+    margin: 10px 10px;
+    background-color: rgb(247, 247, 247);
 }
 .post_image{
     width: 100%;
@@ -78,4 +86,12 @@
     background-color: inherit;
     font-size: 1rem;
     cursor: pointer;
+}
+.post_category{
+    color: gray;
+    font-size: 0.9rem;
+}
+.post_country{
+ color: gray;
+    font-size: 0.9rem;
 }

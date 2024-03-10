@@ -73,7 +73,7 @@ const Foods = () => {
                 <div className="food_ingredients_note">
                 {food.ingredients.map((item , index)=> (
                   <div className="food_ingredients_div">
-                    {item}
+                    {index + 1}- {item}
                   </div>
                 ))}
                 </div>
