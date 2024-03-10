@@ -27,13 +27,12 @@ const Header = () => {
             <Link to="./Foods">
               <li>Dinner</li>
             </Link>
-            <Link to='./Recipes'>
+            <Link to="./Recipes">
               <li>Recipes</li>
             </Link>
-
-            <a href="">
+            <Link to='./Contact'>
               <li>Contact</li>
-            </a>
+            </Link>
             <li>
               <IoSearchOutline
                 className="Navbar-search"

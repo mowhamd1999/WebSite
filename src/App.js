@@ -6,6 +6,7 @@ import Main from "./Component/Body/Main/Main";
 import Foods from "./Component/Body/Posts/Foods/Foods";
 import Food from "./Component/Body/Posts/Food/Food";
 import Recipes from "./Component/Body/Posts/Recipes/Recipes";
+import Contact from "./Component/Contact/Contact";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
             <Route path="/Foods" element=<Foods /> />
             <Route path="/Foods/:title" element=<Food /> />
             <Route path="/Recipes" element=<Recipes />/>
+            <Route path="/Contact" element=<Contact />/>
           </Routes>
         </div>
         <Footer />

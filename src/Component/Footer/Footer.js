@@ -23,7 +23,7 @@ const Footer = () => {
               <Link to="./Recipes" className="Link">
                 <li>Recipes</li>
               </Link>
-              <Link className="Link">
+              <Link to='./Contact' className="Link">
                 <li>Contact</li>
               </Link>
             </ul>
