@@ -172,5 +172,8 @@ let dinner = [
     ],
     note: "This is a basic recipe for scrambled eggs. You can adjust the amount of milk, butter, salt, and pepper to your liking. You can also add other ingredients, such as chopped ham, sausage, or herbs.",
   },
+{
+  title:'قهوه گ'
+}
 ];
 export default dinner;

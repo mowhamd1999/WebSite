@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 const Contact = () => {
+  const [contact, setContact] = useState({
+    name: "",
+    email: "",
+    number: "",
+    company: "",
+    message: "",
+    id: Math.floor(Math.random() * 1000)
+  });
+  const nameHandler = (event) => {
+    setContact({ ...contact, [event.target.name]: event.target.value });
+  };
+
+  const submitHandler = () => {};
+  console.log(contact);
   return (
     <div className="contact_container">
       <div className="contact_header">
@@ -20,6 +34,10 @@ const Contact = () => {
                   className="form_input"
                   type="text"
                   placeholder="Your name"
+                  required
+                  onChange={nameHandler}
+                  value={contact.name}
+                  name="name"
                 />
               </div>
               <div className="contact_form_input">
@@ -28,6 +46,10 @@ const Contact = () => {
                   className="form_input"
                   type="text"
                   placeholder="Your email"
+                  required
+                  value={contact.email}
+                  onChange={nameHandler}
+                  name="email"
                 />
               </div>
               <div className="contact_form_input">
@@ -35,6 +57,9 @@ const Contact = () => {
                 <input
                   className="form_input"
                   type="text"
+                  value={contact.number}
+                  onChange={nameHandler}
+                  name="number"
                   placeholder="Phone #"
                 />
               </div>
@@ -44,6 +69,9 @@ const Contact = () => {
                   className="form_input"
                   type="text"
                   placeholder="Company name"
+                  value={contact.company}
+                  onChange={nameHandler}
+                  name="company"
                 />
               </div>
               <div className="contact_form_textarea">
@@ -52,9 +80,17 @@ const Contact = () => {
                   className="form_textarea"
                   type=""
                   placeholder="Write your message"
+                  required
+                  value={contact.message}
+                  onChange={nameHandler}
+                  name="message"
                 />
               </div>
-              <button className="form_btn" type="submit">
+              <button
+                className="form_btn"
+                type="submit"
+                onClick={submitHandler}
+              >
                 SEND MESSAGE
               </button>
             </form>
